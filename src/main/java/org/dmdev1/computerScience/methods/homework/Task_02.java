@@ -1,4 +1,4 @@
-package org.dmdev1.computerScience.homework;
+package org.dmdev1.computerScience.methods.homework;
 
 
 /*
@@ -29,7 +29,7 @@ public class Task_02 {
         System.out.println(run(11, 0, '/'));
     }
 
-    public static double run(double operand1, double operand2, char operation) {
+    private static double run(double operand1, double operand2, char operation) {
         return operation == '+' ? operand1 + operand2 :
                 operation == '-' ? operand1 - operand2 :
                         operation == '*' ? operand1 * operand2 :

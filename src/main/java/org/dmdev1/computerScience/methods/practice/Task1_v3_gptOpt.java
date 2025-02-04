@@ -1,4 +1,4 @@
-package org.dmdev1.computerScience.practice;
+package org.dmdev1.computerScience.methods.practice;
 
 /*Задача 1
 Имеются три числа - день, месяц и год, вводимые пользователем с консоли.
@@ -9,7 +9,7 @@ package org.dmdev1.computerScience.practice;
 
 import java.util.Scanner;
 
-public class Task1_03_gptOpt {
+public class Task1_v3_gptOpt {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -31,7 +31,7 @@ public class Task1_03_gptOpt {
         }
     }
 
-    public static boolean isValidDate(int day, int month, int year) {
+    private static boolean isValidDate(int day, int month, int year) {
         if (year <= 0 || month < 1 || month > 12) {
             return false;
         }
@@ -40,7 +40,7 @@ public class Task1_03_gptOpt {
         return day >= 1 && day <= maxDays;
     }
 
-    public static int getDaysInMonth(int month, int year) {
+    private static int getDaysInMonth(int month, int year) {
         return switch (month) {
             case 4, 6, 9, 11 -> 30;
             case 2 -> isLeapYear(year) ? 29 : 28;
@@ -48,15 +48,15 @@ public class Task1_03_gptOpt {
         };
     }
 
-    public static boolean isLeapYear(int year) {
+    private static boolean isLeapYear(int year) {
         return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
     }
 
-    public static String formatDate(int[] date) {
+    private static String formatDate(int[] date) {
         return date[0] + "." + date[1] + "." + date[2];
     }
 
-    public static int[] nextDay(int day, int month, int year) {
+    private static int[] nextDay(int day, int month, int year) {
         int maxDays = getDaysInMonth(month, year);
 
         if (day < maxDays) {

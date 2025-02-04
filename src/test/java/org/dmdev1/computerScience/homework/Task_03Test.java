@@ -1,5 +1,6 @@
 package org.dmdev1.computerScience.homework;
 
+import org.dmdev1.computerScience.methods.homework.Task_03;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,4 +1,4 @@
-package org.dmdev1.computerScience.practice;
+package org.dmdev1.computerScience.methods.practice;
 
 /* Задача 2
 Написать программу, вычисляющую корни квадратного уравнения вида ax ² + bx + c = 0, где a, b и c - целочисленные параметры функции run.
@@ -18,13 +18,13 @@ package org.dmdev1.computerScience.practice;
 Обращайте внимание, что параметры все целочисленные, а корни могут иметь дробную часть.
 */
 
-public class Task2_01 {
+public class Task2_v1 {
     public static void main(String[] args) {
         run(1, 2, 1);
 
     }
 
-    public static void run(int a, int b, int c) {
+    private static void run(int a, int b, int c) {
 
         double disc = discriminant(a, b, c);
 
@@ -43,15 +43,15 @@ public class Task2_01 {
 
     }
 
-    public static boolean isPositive(double disc) {
+    private static boolean isPositive(double disc) {
         return disc > 0;
     }
 
-    public static boolean isZero(double disc) {
+    private static boolean isZero(double disc) {
         return disc == 0;
     }
 
-    public static double discriminant(int a, int b, int c) {
+    private static double discriminant(int a, int b, int c) {
         return Math.pow(b, 2) - (4 * a * c);
     }
 }

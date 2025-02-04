@@ -1,4 +1,4 @@
-package org.dmdev1.computerScience.homework;
+package org.dmdev1.computerScience.methods.homework;
 
 /*
 * Задание 3

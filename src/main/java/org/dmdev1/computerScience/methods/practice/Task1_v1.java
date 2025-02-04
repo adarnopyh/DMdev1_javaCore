@@ -1,4 +1,4 @@
-package org.dmdev1.computerScience.practice;
+package org.dmdev1.computerScience.methods.practice;
 
 /*Задача 1
 Имеются три числа - день, месяц и год, вводимые пользователем с консоли.
@@ -12,7 +12,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 
-public class Task1_01 {
+public class Task1_v1 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
