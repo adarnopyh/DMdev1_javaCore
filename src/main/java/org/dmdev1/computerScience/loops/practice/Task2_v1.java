@@ -8,7 +8,7 @@ package org.dmdev1.computerScience.loops.practice;
 
 public class Task2_v1 {
     public static void main(String[] args) {
-        System.out.println();
+        System.out.println("yo");
     }
 
 }
