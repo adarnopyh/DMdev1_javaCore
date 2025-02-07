@@ -16,7 +16,7 @@ public class Task2_v1 {
         for (int i = 0; result < num; i += result) {
             System.out.println(i);
             result += i;
-            System.out.println(result);
+            System.out.println(result < num ? result : "");
         }
     }
 
