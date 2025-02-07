@@ -8,7 +8,16 @@ package org.dmdev1.computerScience.loops.practice;
 
 public class Task2_v1 {
     public static void main(String[] args) {
-        System.out.println("yo");
+        fiboDigits(4181);
+    }
+
+    public static void fiboDigits(int num) {
+        int result = 1;
+        for (int i = 0; result < num; i += result) {
+            System.out.println(i);
+            result += i;
+            System.out.println(result);
+        }
     }
 
 }
