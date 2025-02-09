@@ -29,7 +29,7 @@ public class Task3_v1_separateArray {
     }
 
     private static int[][] separateArray(int[] array) {
-        int[][] arrayOfArrays = new int[3][2];
+        int[][] arrayOfArrays = new int[3][0];
         int[] zerosArray = new int[arrSizes(array)[0]];
         int[] negativeArray = new int[arrSizes(array)[1]];
         int[] positiveArray = new int[arrSizes(array)[2]];
