@@ -6,12 +6,12 @@ package org.dmdev1.computerScience.loops.practice;
 Решить двумя способами: с помощью цикла и с помощью рекурсии.
 * */
 
-public class Task2_v1 {
+public class Task2_v1_fibonacciSequence {
     public static void main(String[] args) {
-        fiboDigits(4181);
+        fibonacciSequence(4181);
     }
 
-    public static void fiboDigits(int num) {
+    public static void fibonacciSequence(int num) {
         int result = 1;
         for (int i = 0; result < num; i += result) {
             System.out.println(i);
