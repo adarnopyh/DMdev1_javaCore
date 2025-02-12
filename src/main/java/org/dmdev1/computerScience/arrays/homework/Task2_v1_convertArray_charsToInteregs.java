@@ -23,7 +23,7 @@ public class Task2_v1_convertArray_charsToInteregs {
     public static int[] convertArray(char[] array) {
         int[] numArray = new int[array.length];
         for (int i = 0; i < array.length; i++) {
-            numArray[i] = (int) array[i];
+            numArray[i] = array[i];
 
         }
         return numArray;

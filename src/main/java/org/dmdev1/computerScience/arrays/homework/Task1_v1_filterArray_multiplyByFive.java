@@ -27,7 +27,7 @@ public class Task1_v1_filterArray_multiplyByFive {
         for (int value : array) {
 
             if (value >= 0) {
-                positiveArray[count] = value * 5;
+                positiveArray[count] = value * positiveArray.length;
                 count++;
             }
 
