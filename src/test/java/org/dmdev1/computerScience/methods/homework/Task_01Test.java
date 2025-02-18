@@ -1,4 +1,4 @@
-package org.dmdev1.computerScience.homework;
+package org.dmdev1.computerScience.methods.homework;
 
 import org.dmdev1.computerScience.methods.homework.Task_01;
 import org.junit.jupiter.api.Test;
