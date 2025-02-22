@@ -1,4 +1,4 @@
-package org.dmdev1.oop.introduction.homework_v1.dto;
+package org.dmdev1.level2.introduction.homework_Task1.objects;
 
 public class Room {
     private boolean isWalkThrough;
@@ -14,4 +14,14 @@ public class Room {
     public void setWalkThrough(boolean walkThrough) {
         isWalkThrough = walkThrough;
     }
+
+    @Override
+    public String toString() {
+        return "This room " + (isWalkThrough ? "is walk-through" : "is not walk-through");
+    }
+
+    public void print() {
+        System.out.println(toString());
+    }
+
 }
