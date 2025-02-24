@@ -9,4 +9,5 @@ public class Input {
         System.out.println(atm.getAtmBalance());
         atm.cashWithdrawal(70);
     }
+
 }
