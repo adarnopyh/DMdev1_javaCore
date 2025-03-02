@@ -1,8 +1,8 @@
 package org.dmdev1.oop_level2.oop_concepts.Task2_Space;
 
-public class Satellite extends AstronomicalObject{
+public class Satellite extends AstronomicalObject {
 
-private boolean isSpinning;
+    private boolean isSpinning;
 
     public Satellite(String name, long diameterInKm, double massInSolarM, boolean isSpinning) {
         super(name, diameterInKm, massInSolarM);
@@ -15,6 +15,5 @@ private boolean isSpinning;
                 "isSpinning = " + isSpinning +
                 "} " + super.toString();
     }
-
 
 }

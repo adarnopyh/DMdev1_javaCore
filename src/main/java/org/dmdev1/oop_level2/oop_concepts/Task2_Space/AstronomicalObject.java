@@ -44,4 +44,5 @@ public abstract class AstronomicalObject implements Printable {
                 ", massInSolarM=" + massInSolarM +
                 '}';
     }
+
 }

@@ -1,11 +1,11 @@
 package org.dmdev1.oop_level2.oop_concepts.Task2_Space;
 
 /*
-* au stand for astronomical unit
-*
-*/
+ * au stand for astronomical unit
+ *
+ */
 
-public class Planet extends AstronomicalObject{
+public class Planet extends AstronomicalObject {
     private double au;
 
     public Planet(String name, long diameterInKm, double massInSolarM, double au) {

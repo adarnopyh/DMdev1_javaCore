@@ -21,13 +21,12 @@ public final class SpaceUtils {
     }
 
 
-
-public static double get_SOLAR_MASS_IN_KG() {
+    public static double get_SOLAR_MASS_IN_KG() {
         return SOLAR_MASS_IN_KG.getValue();
-}
+    }
 
-private double getKgFromAU (AstronomicalObject object){
-       return object.getMassInSolarM() * (ONE_ASTRONOMICAL_UNIT_IN_M.getValue() / 1000);
-}
+    private double getKgFromAU(AstronomicalObject object) {
+        return object.getMassInSolarM() * (ONE_ASTRONOMICAL_UNIT_IN_M.getValue() / 1000);
+    }
 
 }

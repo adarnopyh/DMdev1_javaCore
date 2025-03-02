@@ -18,5 +18,4 @@ public enum SpaceConstants {
         return value;
     }
 
-
 }
