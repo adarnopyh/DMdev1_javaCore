@@ -11,4 +11,5 @@ public class Asteroid extends AstronomicalObject {
     public void print() {
 
     }
+
 }
