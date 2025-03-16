@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "year": 2022,
+    "month": 5,
+    "genre": "Adventure",
+    "rating": 8.5
+  },
+  {
+    "id": 10,
+    "year": 2021,
+    "month": 7,
+    "genre": "Family",
+    "rating": 7.8
+  },
+  {
+    "id": 3,
+    "year": 2022,
+    "month": 5,
+    "genre": "Drama",
+    "rating": 9.0
+  },
+  {
+    "id": 2,
+    "year": 2021,
+    "month": 4,
+    "genre": "Comedy",
+    "rating": 5.9
+  },
+  {
+    "id": 5,
+    "year": 2023,
+    "month": 3,
+    "genre": "Thriller",
+    "rating": 6.5
+  },
+  {
+    "id": 6,
+    "year": 2021,
+    "month": 10,
+    "genre": "Action",
+    "rating": 7.3
+  },
+  {
+    "id": 7,
+    "year": 1983,
+    "month": 4,
+    "genre": "Sci-Fi",
+    "rating": 6.8
+  },
+  {
+    "id": 7,
+    "year": 1984,
+    "month": 5,
+    "genre": "Sci-Fi",
+    "rating": 6.8
+  },
+  {
+    "id": 7,
+    "year": 1984,
+    "month": 9,
+    "genre": "Sci-Fi",
+    "rating": 7.7
+  },
+  {
+    "id": 8,
+    "year": 2024,
+    "month": 6,
+    "genre": "Arthouse",
+    "rating": 8.7
+  },
+  {
+    "id": 9,
+    "year": 1957,
+    "month": 3,
+    "genre": "Mystery",
+    "rating": 9.1
+  },
+  {
+    "id": 4,
+    "year": 2021,
+    "month": 4,
+    "genre": "Action",
+    "rating": 6.4
+  }
+]

@@ -1,26 +1,22 @@
 package org.dmdev1.javaCore.lesson_7_collections.collections2;
 
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class Cinema {
-    private Map<Integer, List<Movie>> moviesByYear;
+
+    private Map<Integer, LinkedHashSet<Movie>> moviesByYear;
 
     public Cinema() {
-        this.moviesByYear = new TreeMap<>();
+        this.moviesByYear = new LinkedHashMap<>();
     }
 
-    public Cinema(Map<Integer, List<Movie>> moviesByYear) {
-        this.moviesByYear = new TreeMap<>(moviesByYear);
+    public Cinema(Map<Integer, LinkedHashSet<Movie>> moviesByYear) {
+        this.moviesByYear = new LinkedHashMap<>(moviesByYear);
     }
 
-    public Map<Integer, List<Movie>> getMoviesByYear() {
+    public Map<Integer, LinkedHashSet<Movie>> getMoviesByYear() {
         return moviesByYear;
     }
-
-
-
 }
 
 

@@ -1,39 +1,56 @@
 package org.dmdev1.javaCore.lesson_7_collections.collections2;
 
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import org.dmdev1.javaCore.lesson_7_collections.collections1.config.JsonReader;
+
+import java.util.*;
 
 import static org.dmdev1.javaCore.lesson_7_collections.collections2.Utils.*;
 
+
+/*
+* Задание 1
+
+Даны 2 класса:
+
+- Фильм с 5-ю полями: Уникальный Целочисленный идентификатор (id), Год издания, Месяц издания, Жанр и Рейтинг;
+
+- Кинотеатр, где есть всего лишь одно единственное поле: отсортированный ассоциативный массив, где ключом является год издания, а значением - все фильмы, выпустившиеся в этом году.
+
+Добавить функционал в кинотеатр таким образом, чтобы можно было:
+
+- добавлять в него новый фильм
+
+- получить все фильмы по переданному году
+
+- получить все фильмы по переданному году и месяцу
+
+- получить все фильмы по переданному жанру
+
+- получать ТОП-10 фильмов отсортированные по Рейтингу в порядке убывания
+
+Учесть следующее:
+
+- в кинотеатре фильмы должны храниться в порядке их добавления в него (т.е. предусмотреть порядок значения ассоциативного массива)
+
+- не должен добавляться фильм, если такой уже есть в кинотеатре
+
+Продемонстрировать работу кинотеатра в отдельном классе.*/
+
 public class CinemaRunner {
     public static void main(String[] args) {
-        Map<Integer, List<Movie>> moviesByYear = new TreeMap<>();
 
-        Movie movie1 = new Movie(1, 2022, 5, "Adventure", 8.5);
-        Movie movie2 = new Movie(2, 2021, 7, "Family", 7.8);
-        Movie movie3 = new Movie(3, 2022, 5, "Drama", 9.0);
-        Movie movie4 = new Movie(4, 2021, 4, "Comedy", 5.9);
-        Movie movie5 = new Movie(5, 2023, 3, "Thriller", 6.5);
-        Movie movie6 = new Movie(6, 2021, 10, "Action", 7.3);
-        Movie movie7 = new Movie(7, 1983, 4, "Sci-Fi", 6.8);
-        Movie movie8 = new Movie(8, 2024, 6, "Arthouse", 8.7);
-        Movie movie9 = new Movie(9, 1957, 3, "Mystery", 9.1);
-        Movie movie10 = new Movie(10, 2021, 4, "Action", 6.4);
+        List<Movie> movies = JsonReader.readMoviesFromJson("movies.json");
+        Map<Integer, LinkedHashSet<Movie>> moviesByYear = new LinkedHashMap<>();
 
-        addMovie(moviesByYear, movie1);
-        addMovie(moviesByYear, movie2);
-        addMovie(moviesByYear, movie3);
-        addMovie(moviesByYear, movie4);
-        addMovie(moviesByYear, movie5);
-        addMovie(moviesByYear, movie6);
-        addMovie(moviesByYear, movie7);
-        addMovie(moviesByYear, movie8);
-        addMovie(moviesByYear, movie9);
-        addMovie(moviesByYear, movie10);
+        for (Movie movie : movies) {
+            addMovie(moviesByYear, movie);
+        }
+
+        System.out.println("Movies after adding:");
+        printMoviesByYear(moviesByYear);
 
         System.out.println("Movies by year 2022:");
-        System.out.println(getMoviesByYear(moviesByYear, 2022));
+        System.out.println(getMoviesByYear(moviesByYear, 1984));
 
         System.out.println("Movies by year 2021 and month 7:");
         System.out.println(getMoviesByYearAndMonth(moviesByYear, 2021, 7));

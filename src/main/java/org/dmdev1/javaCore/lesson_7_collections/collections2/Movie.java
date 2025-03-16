@@ -1,5 +1,6 @@
 package org.dmdev1.javaCore.lesson_7_collections.collections2;
 
+import java.time.Month;
 import java.util.Objects;
 
 public class Movie {
@@ -8,6 +9,9 @@ public class Movie {
     private int month;
     private String genre;
     private double rating;
+
+    public Movie() {
+    }
 
     public Movie(int id, int year, int month, String genre, double rating) {
         this.id = id;
@@ -39,13 +43,13 @@ public class Movie {
 
     @Override
     public String toString() {
-        return "Movie{" +
-                "id=" + id +
-                ", year=" + year +
-                ", month=" + month +
-                ", genre='" + genre + '\'' +
-                ", rating=" + rating +
-                '}';
+        String monthName = Month.of(month).name().toLowerCase();
+        monthName = monthName.substring(0, 1).toUpperCase() + monthName.substring(1);
+
+        return "Movie with ID: " + id +
+                " released in " + monthName + ' ' + year +
+                ". This is a " + genre +
+                " movie, with rating: " + rating + "\n";
     }
 
     @Override
