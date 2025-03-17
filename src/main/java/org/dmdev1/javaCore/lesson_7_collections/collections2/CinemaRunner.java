@@ -49,7 +49,7 @@ public class CinemaRunner {
         System.out.println("Movies after adding:");
         printMoviesByYear(moviesByYear);
 
-        System.out.println("Movies by year 2022:");
+        System.out.println("Movies by year 1984:");
         System.out.println(getMoviesByYear(moviesByYear, 1984));
 
         System.out.println("Movies by year 2021 and month 7:");
