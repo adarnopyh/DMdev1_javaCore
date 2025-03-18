@@ -8,7 +8,6 @@ import java.util.List;
 
 public final class Utils {
     private Utils() {
-        throw new UnsupportedOperationException("Utility class Utils");
     }
 
     public static void print(Object print){
