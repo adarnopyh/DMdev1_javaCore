@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Jak",
+    "surname": "Cidrak",
+    "courseNumber": 1,
+    "marks": [8, 9, 7, 8, 9]
+  },
+  {
+    "name": "Jakci",
+    "surname": "Drakci",
+    "courseNumber": 2,
+    "marks": [7, 8, 9, 8, 7]
+  },
+  {
+    "name": "Jakcidrakcijcik",
+    "surname": "Pomponi",
+    "courseNumber": 1,
+    "marks": [9, 8, 5, 7, 3]
+  },
+  {
+    "name": "Pup",
+    "surname": "Pupkin",
+    "courseNumber": 3,
+    "marks": [6, 5, 8, 70]
+  },
+  {
+    "name": "Bob",
+    "surname": "Pupkin",
+    "courseNumber": 2,
+    "marks": [8, 9, 7]
+  },
+  {
+    "name": "Nik",
+    "surname": "Nikolson",
+    "courseNumber": 3,
+    "marks": [7, 7, 8, 5, 7]
+  },
+  {
+    "name": "Emma",
+    "surname": "Peggi",
+    "courseNumber": 1,
+    "marks": [5, 9, 2, 7, 8]
+  },
+  {
+    "name": "Olja",
+    "surname": "Dolina",
+    "courseNumber": 2,
+    "marks": [8, 8, 3, 7, 6]
+  },
+  {
+    "name": "Sopha",
+    "surname": "Saharova",
+    "courseNumber": 3,
+    "marks": [7, 8, 8, 7, 6]
+  },
+  {
+    "name": "Liam",
+    "surname": "Miliardovich",
+    "courseNumber": 1,
+    "marks": [9, 9, 5, 9, 10, 10]
+  },
+  {
+    "name": "Nora",
+    "surname": "Blin",
+    "courseNumber": 2,
+    "marks": [8, 8, 8, 2]
+  },
+  {
+    "name": "Mason",
+    "surname": "Kuklus",
+    "courseNumber": 3,
+    "marks": [6, 7]
+  },
+  {
+    "name": "Ithan",
+    "surname": "Wolkir",
+    "courseNumber": 4,
+    "marks": [8, 5]
+  },
+  {
+    "name": "Ava",
+    "surname": "Halava",
+    "courseNumber": 4,
+    "marks": [9, 10, 9, 9, 9, 10, 10, 10]
+  },
+  {
+    "name": "Isabella",
+    "surname": "Johns",
+    "courseNumber": 3,
+    "marks": [7, 7]
+  },
+  {
+    "name": "Lucas",
+    "surname": "Drugas",
+    "courseNumber": 1,
+    "marks": [9, 9, 7, 9, 5]
+  },
+  {
+    "name": "Benjamin",
+    "surname": "Button",
+    "courseNumber": 2,
+    "marks": [8, 8, 7, 8, 6]
+  },
+  {
+    "name": "Charlotte",
+    "surname": "Samara",
+    "courseNumber": 3,
+    "marks": [7, 8, 8, 8, 9]
+  },
+  {
+    "name": "Amelia",
+    "surname": "Scot",
+    "courseNumber": 1,
+    "marks": [9, 9]
+  },
+  {
+    "name": "Harper",
+    "surname": "Duke",
+    "courseNumber": 4,
+    "marks": [8, 9, 8, 8, 7, 7, 8]
+  }
+]
